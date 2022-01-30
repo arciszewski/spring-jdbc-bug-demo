@@ -1,0 +1,8 @@
+spring.datasource:
+  url: jdbc:h2:mem:testdb;INIT=RUNSCRIPT FROM 'src/main/resources/init-script.sql'
+  username: sa
+  password: sa
+  driverClassName: org.h2.Driver
+
+logging.level.com.zaxxer.hikari.HikariConfig: DEBUG
+logging.level.com.zaxxer.hikari: TRACE
